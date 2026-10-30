@@ -70,32 +70,64 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+  <section id="about" class="about">
+    <div class="container">
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I am a backend software engineer with good ability to write clean code for distributed systems.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/AzureDnsLogo.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Backend Software Development</h3>
-            <p class="fst-italic">
-              Currently I work as a software engineer with    Azure    DNS       control plane team.
-              This is a most critical(ring 0) within the Azure Networking organization. Our team 
-              specifically works on large volume of customer requests updating the DNS records. This 
-              has provided me good experience in terms of understanding distributed systems and writing
-              great software with extensive code coverages. 
-            </p>
-          </div>
-        </div>
-
+      <div class="section-title">
+        <h2>About</h2>
+        <p>
+          I am a software engineer specializing in distributed systems,
+          AI-powered applications, and scalable backend infrastructure.
+          I enjoy building reliable systems that bring together machine
+          learning, information retrieval, and real-time data processing
+          to solve complex engineering and business problems.
+        </p>
       </div>
-    </section><!-- End About Section -->
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/ProRataLogo.png" class="img-fluid" alt="ProRata AI">
+          <img src="assets/img/AzureDnsLogo.png" class="img-fluid" alt="Azure DNS">
+        </div>
+
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Distributed Systems & AI Engineering</h3>
+
+          <p class="fst-italic">
+            At ProRata AI, I build AI-driven advertising systems spanning
+            semantic retrieval, machine learning classification, real-time
+            optimization, and LLM-powered agents. My work includes scaling
+            vector similarity retrieval to serve millions of ad impressions
+            per day, developing transformer-based content classification
+            pipelines, and building event-driven feedback systems that
+            adapt ad-serving strategies using real-time engagement signals.
+            I have also worked on agentic applications using retrieval-
+            augmented generation (RAG), vector databases, and LangGraph
+            to power advertiser-facing product discovery and recommendations.
+          </p>
+
+          <p>
+            Previously, at Microsoft, I worked on Azure DNS, a critical
+            cloud networking service handling high-volume customer requests.
+            I designed and shipped control-plane capabilities, API validation
+            systems, and developer tooling across the Azure ecosystem.
+            These experiences strengthened my foundations in distributed
+            systems, cloud infrastructure, API design, and building reliable
+            production software with rigorous testing.
+          </p>
+
+          <p>
+            Across both roles, I focus on engineering systems that are
+            scalable, observable, and dependable—from low-level backend
+            infrastructure to AI applications evaluated for correctness
+            and quality.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 
     
     <!-- ======= Skills Section ======= -->
@@ -117,11 +149,15 @@
             <p>
               <strong>.Net, WCF, SpringBoot, FastAPI, Flask, Django, React</strong> 
             </p>
+          <h3 class="skills-title">AI / ML Frameworks</h3>
+            <p>
+              <strong>PyTorch, Scikit-learn, Langgraph, Langchain, Langsmith</strong> 
+            </p>
         </div>
         <div class="col-lg-6" data-aos="fade-up">
           <h3 class="skills-title">Technologies</h3>
           <p>
-            <strong>Azure DNS, Azure CosmosDb, Azure Storage, Azure DevOps, Kusto explorer, Jarvis, Azure Service Fabric, Key Vault, Entra (AAD), Supabase (Firebase), Gemini API, Open AI API</strong>
+            <strong>Redis, Azure DNS, Azure CosmosDb, Neo4j,Azure Storage, Azure DevOps, Kusto explorer, Jarvis, Azure Service Fabric, Key Vault, Entra (AAD), Supabase (Firebase), Gemini API, Open AI API, Azure Open Search</strong>
           </p>
         </div>
       </div>
@@ -177,8 +213,18 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Software Engineer 2</h4>
-              <h5>Dec, 2021 - Present</h5>
+              <h4>Principal Software / AI Engineer</h4>
+              <h5>Aug, 2025 - Present</h5>
+              <p><em>Prorata AI, Bellevue, WA </em></p>
+              <ul>
+                <li>Built and scaled an AI-powered Ads Agent that answered questions about advertiser products and provided personalized product recommendations based on customer use cases. Developed embeddable SDKs adopted across multiple advertiser websites, eliminating the need for advertisers to build and maintain custom agents. Architected server-side agents using LangGraph, with LangSmith tracing/observability and per-advertiser PGVector knowledge bases, incorporating guardrails to constrain responses to relevant product information. Drove 10% quarter-over-quarter growth in advertiser SDK adoption.</li>
+                <li>Designed and built a real-time experimentation metrics pipeline for high-volume display ads, emitting CTR, engagement, and other performance signals into Kafka and processing them with Apache Flink for low-latency analytics and downstream storage. Enabled real-time experiment feedback and strategy adjustments, shifting ad optimization from offline analysis to online, data-driven decision making.</li>
+                <li>Designed and built an asynchronous publisher-content processing pipeline using RabbitMQ to decouple scraping and embedding from the online ad-serving path. Batched and progressively embedded publisher content using BAAI BGE, enabling scalable semantic matching with demand-side ads while improving inference efficiency, workload isolation, and resilience through asynchronous processing and retries.</li>
+                <li>Architected and scaled a production semantic ad retrieval service for contextual ad serving, eliminating single node bottlenecks by designing a horizontally scalable architecture with a write-primary/read-replica topology. Increased serving capacity to support millions of ad impressions per day while significantly improving latency, throughput, and service reliability.</li>
+                <li>Led the design and implementation of an end-to-end ML data pipeline for indirect ad sources, leveraging Hugging Face BERT models to perform automated NSFW detection and IAB content classification. Built scalable data ingestion, filtering, and classification workflows that improved dataset quality, increased eligible ad inventory, raised ad fill rate from 30% to 80%, and enhanced overall ad relevance</li>
+              </ul>
+              <h4>Senior Software Engineer</h4>
+              <h5>Dec, 2021 - Aug, 2025</h5>
               <p><em>Microsoft, Azure DNS, Redmond, WA </em></p>
               <ul>
                 <li>Lead in the design, development, and implementation of the Preflight API. This helped catch the faults in customer requests earlier than while creating resources.</li>
@@ -187,7 +233,7 @@
                 <li>Helped the team migrate to a newer tenant sku by migrating about 40 tenants in a record time of 30 days. This helped team achieve the KPI deadlines and work with upgraded Sku.</li>
                 <li>Improved the tooling for my team by creating Geneva actions for controlling Traffic Manager.</li>
               </ul>
-              <h4>Software Engineer</h4>
+              <h4>Software Engineer 2</h4>
               <h5>Jun, 2020 - Dec, 2021</h5>
               <p><em>Microsoft, PnA Team, Redmond, WA </em></p>
               <ul>
@@ -256,7 +302,15 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
+          <div class="col-lg-4 col-md-6 portfolio-item filter-general">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/DealFinder.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/DealFinder.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Personal deal assistant agent"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details3.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-hackathon">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/AzUrlShortener.png" class="img-fluid" alt="">
